@@ -8,7 +8,7 @@
 function spinalCase(str) {
   str = str.match(/[a-zA-Z][a-z]+/g).join(" ")
   .replace(/[_\s]/g, '-')
-  .atoLowerCase()
+  .toLowerCase()
   return str;
 }
 
