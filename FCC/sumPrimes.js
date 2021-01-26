@@ -11,5 +11,5 @@ function sumPrimes(num) {
             }
         }
     }
-  return primes.reduce((accumulator, currentValue) => accumulator + currentValue)
+  return primes.reduce((a, b) => a + b)
 }
