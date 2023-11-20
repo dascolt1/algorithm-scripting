@@ -5,23 +5,14 @@
 //s = "coding", t "ingcod", return ''
 
 function spotTheDifferenceSorting(s, t) {
-	if(s.length === t.length) return '';
-
 	let a = s.split("").sort().join(""), b = t.split("").sort().join("");
-	let length = a.length > b.length ? a.length : b.length;
 
-	for(let i = 0;i < length;i++) {
-	   if(a.length > b.length) {
-	    if(a[i] !== b[i]) {
-			return a[i]
-		}
-	   }else {
-	       if(b[i] !== a[i]) {
-			return b[i];
-		}
+	for(let i = 0;i < b.length;i++) {
+	    if(b[i] !== a[i]) {
+			return b[i]
 	   }
-		
-	}
+
+	   return '';
 }
 
 
