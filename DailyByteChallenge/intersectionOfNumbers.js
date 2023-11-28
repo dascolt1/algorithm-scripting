@@ -12,6 +12,10 @@ function intersectionOfNumbers(nums1, nums2) {
 	}
 
 	for(i in nums2){
-		if()
+		if(map.has(nums2[i])){
+			answer.push(nums2[i])
+		}
 	}
+
+	return [...new Set(answer)]; 
 }
