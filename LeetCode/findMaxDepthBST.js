@@ -2,9 +2,8 @@
 
 function maxDepth(root) {
     
-    let level = findLevel(root, 0);
+    return findLevel(root, 0);
 
-    return level;
 };
 
 function findLevel(node, level) {
