@@ -23,4 +23,4 @@ function traverseTree(node, answer, level) {
     traverseTree(node.right, answer, level+1)
 
     return answer;
-}
+} 
