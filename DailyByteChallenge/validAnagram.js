@@ -26,7 +26,7 @@ function validAnagramHash(s, t) {
 	for(i in t) {
 
 		if(m2.has(t[i])) {
-			m2.set(t[i], m2.get(t[i]+1))
+			m2.set(t[i], m2.get(t[i]) + 1)
 		}else {
 			m2.set(t[i], 1);
 		}
