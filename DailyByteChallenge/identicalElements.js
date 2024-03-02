@@ -6,22 +6,16 @@
 
 
 function identicalElements(nums, k) {
-	let i = 0;
-	let j = i+1;
+	
+	const map = new Map();
 
-	while(j < nums.length) {
-		if(nums[i] !== nums[j] && j <= k) {
-			j++;
-			if(nums[i] === nums[j]) {
-				return true;
-			}else {
-				i++;
-				j = i +1;
-			}
+	for(let i = 0;i < nums.length;i++) {
+		if(map.has(nums[i])) {
+		    return i - map.get(nums[i]) <= k
 		}else {
-			return false;
+			map.set(nums[i], i)
 		}
 	}
 
-	//return false;
+	return true;
 }
