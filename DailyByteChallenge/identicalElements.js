@@ -4,6 +4,9 @@
 //nums = [1, 2, 1], k = 1, return false.
 //nums = [2, 3, 2], k = 2, return true.
 
+//Used a hash map to store the index of duplicate and then subtracted from current index to see if it was less than or equal to k
+//O(n) time O(n) space
+
 
 function identicalElements(nums, k) {
 	
